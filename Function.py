@@ -69,7 +69,36 @@ def person2(name, age, *args, city, job):
     print(name, age, args, city, job)
 person2("caixukun",18, "person2", 100, city= "sh", job="eng")
 
-##
+## Recursion 递归，计算阶乘
+### 非尾递归
+def myRecursion1(n):
+    if n == 1:
+        return 1
+    else:
+        return n * myRecursion1(n-1)
+print(myRecursion1(5))
+
+print("-------------------------")
+
+### 尾递归
+def myRecursion(n, acc = 1) :
+    if n == 0:
+        return acc
+    else :
+        return myRecursion(n - 1, n * acc)
+
+print(myRecursion(5))
+
+
+
+
+
+
+
+
+
+
+
 
 
 
