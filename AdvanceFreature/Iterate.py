@@ -37,8 +37,6 @@ for b1, a1 in [(1,2),(3,4)]:
     print(a1, b1)
 
 ## 请使用迭代查找一个list中最小和最大值，并返回一个tuple
-
-
 def getMaxMin(tl):
     if not tl: # if tl == [] || if len(tl) == 0
         return (None, None)
