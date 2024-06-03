@@ -4,13 +4,24 @@
 2. None
 3. 整数
 4. 浮点数
-4. 布尔类型
+5. 布尔类型(True | False)
 ## Python函数参数类型
-1. 必选参数
-2. 默认参数
-3. 可变参数
-4. 关键字参数
+1. 必选参数(位置参数)
+2. 默认参数(def f1(a, b=1))
+3. 可变参数(*args)
+4. 关键字参数()
+```python
+def useKeyWord(name, age, **pets):
+    print('name:', name, "age:", age, 'pets:', pets)
+useKeyWord('Whos', '18', Dog='旺仔', Cat='琳娜')
+```
 5. 命名关键字函数
+> 就是为了限定关键字函数的名称
+```python
+def useKeyWord(name, age, *, Dog, Cat):
+    print('name:', name, "age:", age, 'pets:', Dog, Cat)
+useKeyWord('Whos', '18', Dog='旺仔', Cat='琳娜')
+```
 ## 函数
 命名函数时，参数定义顺序 必选、默认、可变、命名关键字、关键字参数 比如：
 ```python
